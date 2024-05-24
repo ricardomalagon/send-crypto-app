@@ -8,13 +8,13 @@ import { Providers } from "@/lib/providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const initialState = cookieToInitialState(config, headers().get("cookie"));
-
 function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const initialState = cookieToInitialState(config, headers().get("cookie"));
+
   return (
     <html lang="en">
       <Providers initialState={initialState}>
