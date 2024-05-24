@@ -10,7 +10,13 @@ declare module "wagmi" {
 
 export const config = createConfig({
   chains: [mainnet, sepolia],
-  connectors: [metaMask()],
+  connectors: [
+    metaMask({
+      dappMetadata: {
+        name: "Example Wagmi dapp",
+      },
+    }),
+  ],
   ssr: true,
   storage: createStorage({
     storage: cookieStorage,
