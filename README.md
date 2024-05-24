@@ -15,3 +15,5 @@ bun dev
 ```
 
 In this project we used [Wagmi](https://wagmi.sh/) to connect to the wallet and also to send crypto from your MetaMask wallet
+
+Live App link: [https://main--send-crypto-app.netlify.app/](https://main--send-crypto-app.netlify.app/)
